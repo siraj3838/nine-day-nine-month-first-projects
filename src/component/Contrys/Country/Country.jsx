@@ -19,7 +19,7 @@ const Country = ({country, handleVisitedCountry, handleVisitedFlags}) => {
             <p><span>Code:{cca3}</span></p>
             <button style={{marginBottom: '10px'}} onClick={()=>handleVisitedCountry(country)}>Mark Visited</button>
             <br />
-            <button onClick={()=>handleVisitedFlags(country)}>Add Flag</button>
+            <button onClick={()=>handleVisitedFlags(country.flags.png)}>Add Flag</button>
             <button onClick={handleVisited}>{visited ? 'Visited' : 'Going'}</button>
             {visited ? 'I am visited this Country.': 'I want to visit'}
         </div>
